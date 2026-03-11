@@ -22,12 +22,12 @@
     padding="8px 12px"
     type="main"
   >
+    <Text id="text2" value="# hello world" verticalAlign="center" />
     <Text
       id="text1"
       value="👋 **Hello {{ current_user.firstName || 'friend' }}!**"
       verticalAlign="center"
     />
     <Button id="button1" text="Button" />
-    <Text id="text2" value="hello world" verticalAlign="center" />
   </Frame>
 </Screen>
