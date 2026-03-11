@@ -28,5 +28,6 @@
       verticalAlign="center"
     />
     <Button id="button1" text="Button" />
+    <Text id="text2" value="hello world" verticalAlign="center" />
   </Frame>
 </Screen>
