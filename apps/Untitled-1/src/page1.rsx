@@ -29,5 +29,17 @@
       verticalAlign="center"
     />
     <Button id="button1" text="Button" />
+    <Button id="button2" text="important button">
+      <Event
+        id="bbd3a881"
+        event="click"
+        method="confetti"
+        params={{}}
+        pluginId=""
+        type="util"
+        waitMs="0"
+        waitType="debounce"
+      />
+    </Button>
   </Frame>
 </Screen>
