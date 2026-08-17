@@ -1,8 +1,8 @@
 export default function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-900">
+    <div className="min-h-screen flex items-center justify-center bg-background">
       <h1
-        className="text-4xl font-bold text-slate-50"
+        className="text-4xl font-bold text-foreground"
         style={{ fontFamily: '"Comic Sans MS", "Comic Sans", cursive' }}
       >
         Hello, world!
