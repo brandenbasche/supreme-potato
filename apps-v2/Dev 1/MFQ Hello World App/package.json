@@ -4,7 +4,6 @@
     "app": {
       "uuid": "cb6a6f08-a7d0-11f1-bcfd-f3d4e2200fb1",
       "name": "MFQ Hello World App",
-      "resourceReferencesByFile": {},
       "appIdentifier": "mfq-hello-world"
     }
   }
