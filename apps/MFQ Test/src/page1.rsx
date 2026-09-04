@@ -9,36 +9,6 @@
   urlSlug=""
   uuid="64e017e4-168e-41ea-85e1-5e10efa92c97"
 >
-  <SqlQueryUnified
-    id="getUsers"
-    notificationDuration={4.5}
-    query={include("../lib/getUsers.sql", "string")}
-    resourceDisplayName="Postgres DB"
-    resourceName="27ec0afa-190d-4233-92cf-4b76ee09511e"
-    runWhenModelUpdates={false}
-    runWhenPageLoads={true}
-    showSuccessToaster={false}
-    showUpdateSetValueDynamicallyToggle={false}
-    updateSetValueDynamically={true}
-    warningCodes={[]}
-  />
-  <SqlQueryUnified
-    id="updateUser"
-    actionType="UPDATE_BY"
-    changeset={
-      '[{"key":"first_name","value":"{{ usersTable.selectedRow.first_name }}"}]'
-    }
-    changesetObject="{{ usersTable.selectedRow }}"
-    editorMode="gui"
-    filterBy={
-      '[{"key":"id","value":"{{ usersTable.selectedRow.id }}","operation":"="}]'
-    }
-    isMultiplayerEdited={false}
-    resourceDisplayName="Postgres DB"
-    resourceName="27ec0afa-190d-4233-92cf-4b76ee09511e"
-    runWhenModelUpdates={false}
-    tableName="sf_users"
-  />
   <Frame
     id="$main"
     enableFullBleed={false}
@@ -65,11 +35,5 @@
         waitType="debounce"
       />
     </Button>
-    <Image
-      id="image1"
-      heightType="fixed"
-      horizontalAlign="center"
-      src="https://picsum.photos/id/1025/800/600"
-    />
   </Frame>
 </Screen>
