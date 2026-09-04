@@ -50,7 +50,7 @@
     <Text
       id="text1"
       horizontalAlign="center"
-      value="# Hello world!"
+      value="# Hello {{ current_user.firstName }}!"
       verticalAlign="center"
     />
     <Button id="button1" text="Important Business Button">
