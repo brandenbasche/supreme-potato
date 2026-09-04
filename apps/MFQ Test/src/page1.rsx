@@ -53,5 +53,17 @@
       value="# Hello world!"
       verticalAlign="center"
     />
+    <Button id="button1" text="Important Business Button">
+      <Event
+        id="e947df77"
+        event="click"
+        method="confetti"
+        params={{}}
+        pluginId=""
+        type="util"
+        waitMs="0"
+        waitType="debounce"
+      />
+    </Button>
   </Frame>
 </Screen>
