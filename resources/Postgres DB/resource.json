@@ -1,0 +1,31 @@
+{
+  "type": "postgresql",
+  "host": "{{ environment.variables.postgres_url }}",
+  "port": "5432",
+  "databaseName": "retool",
+  "databaseUsername": "retool",
+  "databasePassword": "",
+  "description": null,
+  "outboundRegion": null,
+  "ssl": true,
+  "editPrivilege": false,
+  "options": {
+    "sshHost": "",
+    "version": "SqlQueryUnified",
+    "sshPassword": "",
+    "sshUsername": "",
+    "authentication": "user_password",
+    "connectionString": "",
+    "queryEditorModes": { "allowGuiMode": true, "allowSqlMode": true },
+    "sshTunnelEnabled": false,
+    "sshPrivateKeyName": "",
+    "rejectUnauthorized": true,
+    "skipVerifyHostname": false,
+    "paramsFromConnectionString": [["sslmode", "require"]],
+    "userExplicitlySetRejectUnauthorized": true
+  },
+  "environment": "production",
+  "dynamicallyQueryable": false,
+  "uuid": "27ec0afa-190d-4233-92cf-4b76ee09511e",
+  "toolscriptVersion": "1.0.0"
+}
