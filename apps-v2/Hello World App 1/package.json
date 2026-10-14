@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "retool": {
+    "app": {
+      "uuid": "99147798-c7dc-11f1-a358-df35f5097ed1",
+      "name": "Hello World App 1",
+      "resourceReferencesByFile": {},
+      "appIdentifier": "hello-world-app-1"
+    }
+  }
+}
