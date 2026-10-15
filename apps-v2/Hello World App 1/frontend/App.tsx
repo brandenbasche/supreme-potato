@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Moon, Sun } from 'lucide-react'
 import { Button } from './lib/shadcn/button'
+import './appTheme.css'
 
 export default function App() {
   const [isDark, setIsDark] = useState(() =>

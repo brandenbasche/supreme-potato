@@ -1,0 +1,8 @@
+:root:root,
+:root.dark {
+  --font-sans: 'Comic Sans MS', 'Comic Sans', 'Chalkboard SE', 'Comic Neue', cursive;
+}
+
+body {
+  font-family: var(--font-sans);
+}
