@@ -4,7 +4,7 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-pnpmfileChecksum: sha256-f3YIhKgi+38mXP9ijnksJWY705lV/5cgySa1hwDpiGM=
+pnpmfileChecksum: sha256-tmi/jS9+Q+ejMw0N2P4Riy4F1b+mN4pC3ZSNmq+NOsg=
 
 importers:
 
@@ -152,7 +152,7 @@ importers:
         version: 19.2.3(@types/react@19.2.17)
       '@vitejs/plugin-react':
         specifier: 6.1.0
-        version: 6.1.0(vite@8.2.2(esbuild@0.28.1)(jiti@2.6.1))
+        version: 6.1.0(vite@8.2.4(esbuild@0.28.1)(jiti@2.6.1))
       autoprefixer:
         specifier: 10.4.27
         version: 10.4.27(postcss@8.5.23)
@@ -181,8 +181,8 @@ importers:
         specifier: 7.0.2
         version: 7.0.2
       vite:
-        specifier: 8.2.2
-        version: 8.2.2(esbuild@0.28.1)(jiti@2.6.1)
+        specifier: 8.2.4
+        version: 8.2.4(esbuild@0.28.1)(jiti@2.6.1)
 
 packages:
 
@@ -2284,8 +2284,8 @@ packages:
   victory-vendor@37.3.6:
     resolution: {integrity: sha512-SbPDPdDBYp+5MJHhBCAyI7wKM3d5ivekigc2Dk2s7pgbZ9wIgIBYGVw4zGHBml/qTFbexrofXW6Gu4noGxrOwQ==}
 
-  vite@8.2.2:
-    resolution: {integrity: sha512-cFKLV/PRgAUlIRm5WjMjJ86jrftzpqcgH+Us+DS8mI3CDNiH30Whrz8uHL3+MOLPAgqbMBAqWdAHAphOAM+z/Q==}
+  vite@8.2.4:
+    resolution: {integrity: sha512-lfauXnrf2x0p+UoA+wXh0dgFWnUjCyG6Js95KBkgaCwUU9k0DAHI4W6Q0WCx+h+5g+Alce1y4Zi2QjjK0UvGBw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -3481,10 +3481,10 @@ snapshots:
   '@typescript/typescript-win32-x64@7.0.2':
     optional: true
 
-  '@vitejs/plugin-react@6.1.0(vite@8.2.2(esbuild@0.28.1)(jiti@2.6.1))':
+  '@vitejs/plugin-react@6.1.0(vite@8.2.4(esbuild@0.28.1)(jiti@2.6.1))':
     dependencies:
       '@rolldown/pluginutils': 1.0.1
-      vite: 8.2.2(esbuild@0.28.1)(jiti@2.6.1)
+      vite: 8.2.4(esbuild@0.28.1)(jiti@2.6.1)
 
   '@vue/compiler-core@3.5.34':
     dependencies:
@@ -4238,7 +4238,7 @@ snapshots:
       d3-time: 3.1.0
       d3-timer: 3.0.1
 
-  vite@8.2.2(esbuild@0.28.1)(jiti@2.6.1):
+  vite@8.2.4(esbuild@0.28.1)(jiti@2.6.1):
     dependencies:
       lightningcss: 1.33.0
       picomatch: 4.0.5
