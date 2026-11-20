@@ -3,6 +3,7 @@ import { ArrowUpRight, Bell, Building2, ChevronDown, CircleHelp, Command, Crossh
 import { Button } from '../lib/shadcn/button'
 import { Input } from '../lib/shadcn/input'
 import { Badge } from '../lib/shadcn/badge'
+import ThemeToggle from './ThemeToggle'
 
 const navigation = [
   { label: 'Overview', icon: LayoutDashboard, href: '#overview', active: true, count: '' },
@@ -54,13 +55,14 @@ export default function WorkspaceShell({ children }: { children: ReactNode }) {
       </aside>
       <div className="lg:ml-[220px]">
         <header className="flex h-[69px] items-center justify-between gap-4 border-b border-border bg-card px-5 md:px-8">
-          <div className="flex items-center gap-2 text-xs"><Crosshair className="h-5 w-5 lg:hidden" /><span className="text-muted-foreground">Workspace</span><span className="mx-1 text-muted-foreground/50">/</span><span className="font-medium">Overview</span></div>
-          <div className="flex items-center gap-4">
-            <div className="relative hidden w-[230px] md:block"><Search className="pointer-events-none absolute left-3 top-2.5 h-3.5 w-3.5 text-muted-foreground" /><Input aria-label="Search demo workspace" placeholder="Search anything..." readOnly className="h-8 rounded-lg border-border/70 bg-background pl-9 pr-12 text-[11px] shadow-none" /><span className="absolute right-2 top-1.5 flex items-center rounded border border-border px-1 text-[10px] text-muted-foreground"><Command className="mr-0.5 h-2.5 w-2.5" /> K</span></div>
-            <Badge variant="outline" className="gap-1.5 rounded-md border-border bg-background px-2 py-1 text-[9px] font-medium uppercase tracking-wider"><Sparkles className="h-3 w-3" />Demo mode</Badge>
+          <div className="flex min-w-0 items-center gap-2 text-xs"><Crosshair className="h-5 w-5 shrink-0 lg:hidden" /><span className="hidden text-muted-foreground sm:inline">Workspace</span><span className="mx-1 hidden text-muted-foreground/50 sm:inline">/</span><span className="font-medium">Overview</span></div>
+          <div className="flex shrink-0 items-center gap-2 sm:gap-4">
+            <div className="relative hidden w-[230px] xl:block"><Search className="pointer-events-none absolute left-3 top-2.5 h-3.5 w-3.5 text-muted-foreground" /><Input aria-label="Search demo workspace" placeholder="Search anything..." readOnly className="h-8 rounded-lg border-border/70 bg-background pl-9 pr-12 text-[11px] shadow-none" /><span className="absolute right-2 top-1.5 flex items-center rounded border border-border px-1 text-[10px] text-muted-foreground"><Command className="mr-0.5 h-2.5 w-2.5" /> K</span></div>
+            <Badge variant="outline" className="hidden gap-1.5 rounded-md border-border bg-background px-2 py-1 text-[9px] font-medium uppercase tracking-wider md:flex"><Sparkles className="h-3 w-3" />Demo mode</Badge>
             <span className="hidden h-5 border-l border-border sm:block" />
             <Button variant="ghost" size="icon" className="relative hidden h-8 w-8 sm:flex" aria-label="Notifications (demo)"><Bell className="text-muted-foreground" /><span className="absolute right-2 top-1.5 h-1 w-1 rounded-full bg-success" /></Button>
             <span className="hidden h-7 w-7 items-center justify-center rounded-full bg-secondary text-[9px] font-semibold sm:flex">JD</span>
+            <ThemeToggle />
           </div>
         </header>
         {children}
