@@ -10,7 +10,7 @@
   "ssl": null,
   "editPrivilege": null,
   "options": {
-    "baseURL": "https://api.thecatapi.com/v1/",
+    "baseURL": "{{ environment.variables.cats_api_url }}",
     "headers": [["", ""]],
     "urlparams": [["", ""]],
     "auth0_domain": "",
