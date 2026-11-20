@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "devDependencies": {
+    "vitest": "4.1.9"
+  },
+  "retool": {
+    "app": {
+      "uuid": "f7c261da-e508-11f1-a336-57dd93784bfa",
+      "name": "GTM Mission Control",
+      "resourceReferencesByFile": {},
+      "appIdentifier": "gtm-mission-control"
+    }
+  }
+}
