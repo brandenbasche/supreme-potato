@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import { ArrowUpRight, Bell, Building2, ChevronDown, CircleHelp, Command, Crosshair, Layers3, LayoutDashboard, Mail, Radio, Search, Settings2, Sparkles, Target, Users } from 'lucide-react'
+import { ArrowUpRight, Bell, Building2, ChevronDown, CircleHelp, Command, Layers3, LayoutDashboard, Mail, Radio, Rocket, Search, Settings2, Sparkles, Target, Users } from 'lucide-react'
 import { Button } from '../lib/shadcn/button'
 import { Input } from '../lib/shadcn/input'
 import { Badge } from '../lib/shadcn/badge'
@@ -17,7 +17,7 @@ export default function WorkspaceShell({ children }: { children: ReactNode }) {
     <div className="min-h-screen bg-background font-sans text-foreground">
       <aside className="fixed inset-y-0 left-0 z-30 hidden w-[220px] flex-col border-r border-border bg-card lg:flex">
         <a href="#overview" className="flex h-[85px] items-center gap-3 px-6" aria-label="GTM Mission Control home">
-          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-primary-foreground"><Crosshair className="h-6 w-6" strokeWidth={1.7} /></span>
+          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-primary-foreground"><Rocket className="h-6 w-6" strokeWidth={1.7} /></span>
           <span><span className="block text-[16px] font-bold tracking-tight">GTM<span className="ml-1 font-normal text-muted-foreground">/</span></span><span className="block text-[11px] font-medium tracking-wide text-muted-foreground">MISSION CONTROL</span></span>
         </a>
         <div className="mx-4 mb-8 flex items-center gap-2.5 rounded-lg border border-border bg-background p-2.5">
@@ -55,7 +55,7 @@ export default function WorkspaceShell({ children }: { children: ReactNode }) {
       </aside>
       <div className="lg:ml-[220px]">
         <header className="flex h-[69px] items-center justify-between gap-4 border-b border-border bg-card px-5 md:px-8">
-          <div className="flex min-w-0 items-center gap-2 text-xs"><Crosshair className="h-5 w-5 shrink-0 lg:hidden" /><span className="hidden text-muted-foreground sm:inline">Workspace</span><span className="mx-1 hidden text-muted-foreground/50 sm:inline">/</span><span className="font-medium">Overview</span></div>
+          <div className="flex min-w-0 items-center gap-2 text-xs"><Rocket className="h-5 w-5 shrink-0 lg:hidden" /><span className="hidden text-muted-foreground sm:inline">Workspace</span><span className="mx-1 hidden text-muted-foreground/50 sm:inline">/</span><span className="font-medium">Overview</span></div>
           <div className="flex shrink-0 items-center gap-2 sm:gap-4">
             <div className="relative hidden w-[230px] xl:block"><Search className="pointer-events-none absolute left-3 top-2.5 h-3.5 w-3.5 text-muted-foreground" /><Input aria-label="Search demo workspace" placeholder="Search anything..." readOnly className="h-8 rounded-lg border-border/70 bg-background pl-9 pr-12 text-[11px] shadow-none" /><span className="absolute right-2 top-1.5 flex items-center rounded border border-border px-1 text-[10px] text-muted-foreground"><Command className="mr-0.5 h-2.5 w-2.5" /> K</span></div>
             <Badge variant="outline" className="hidden gap-1.5 rounded-md border-border bg-background px-2 py-1 text-[9px] font-medium uppercase tracking-wider md:flex"><Sparkles className="h-3 w-3" />Demo mode</Badge>
