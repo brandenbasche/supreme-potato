@@ -9,4 +9,4 @@ apps:
     release: 1.1.0
 apps-v2:
   - uuid: f7c261da-e508-11f1-a336-57dd93784bfa
-    release: 1.0.0
+    release: 2.0.0
